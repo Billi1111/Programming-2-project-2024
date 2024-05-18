@@ -1,7 +1,13 @@
+//acamdic staff cpp file
 #include "Academic_staff.h"
 #include"University.h"
+#include<iostream>
+#include<string>
+#include<iomanip>
+#include <fstream>
+#include <sstream>
 using namespace std;
-void Academic_staff::setStaffId(int id) {
+void Academic_staff::setStaffId(int id) {//takes the staff id from the user
 	cout << "Enter the staff id: ";
 	cin >> id;
 	StaffId = id;
@@ -11,19 +17,19 @@ int Academic_staff::getStaffId() {
 	return StaffId;
 }
 void Academic_staff::teachcource() {
-	cout << "Enter the course you want to teach: ";
+	cout << "Enter the course you want to teach: ";//takes the course the staff member wants to teach
 	cin >> courses_Tought;
 }
 
 void Academic_staff::setOfficeHours() {
-	cout << "Enter the office hours: ";
+	cout << "Enter the office hours: ";//takes the office hours of the staff member
 	cin >> office_hours;
 }
-int Academic_staff::getOfficehours() {
+string Academic_staff::getOfficehours() {
 	return office_hours;
 }
 
-void Academic_staff::viewStudentsList()
+void Academic_staff::viewStudentsList()//view the list of students
 {
     // Open the TXT file
     ifstream file("ReadWriteFiles/StudentsList.txt");

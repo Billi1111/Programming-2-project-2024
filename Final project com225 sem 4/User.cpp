@@ -1,3 +1,4 @@
+//user.cpp
 #include "User.h"
 #include<iostream>
 #include<string>
@@ -24,7 +25,7 @@ void User::Register() {
 	cout << "Create your password: ";
 	while (true) {
 		getline(cin, password);
-		if (!password.empty()) {
+		if (!password.empty()) {//if the password is not empty
 			break; 
 		}
 		cout << "Please enter a non-empty password: ";
@@ -34,7 +35,7 @@ void User::Register() {
 
 
 
-void User::login() {
+void User::login() {//login function
 	string aemail,pass, Regs;
 	cout << "Enter your email to log in " << endl;
 	cin>>aemail;
@@ -42,14 +43,14 @@ void User::login() {
 	cin >> pass;
 
 
-	if(aemail == this->email && pass == password)
+	if (aemail == this->email && pass == password)//if the email and password are correct
 	{
 		cout << "Welcome " << this->username << " you have logged in succesfully" << endl;
 		return;
 	}
 	
 
-	while(aemail != this->email || pass != this->password)
+	while (aemail != this->email || pass != this->password)//if the email and password are not correct
 	{
 		cout << "You are not registered, please register first" << endl;
 		cout << "If you want to register press R Or Press (any key) to Login Again!! " << endl;
@@ -60,11 +61,11 @@ void User::login() {
 		}
 		else {
 			login();		// recursive function
-			return;
+			return;			//This return statement is used to exit the current function after recursively calling the login()
 		}
 	}
 }
-void User::logout() {
+void User::logout() {//logout function
 	string logouts;
 	cout << "Dear customer, to logout press L" << endl;
 	cin >> logouts;
@@ -72,7 +73,7 @@ void User::logout() {
 		login();
 	}
 }
-void User::changePass() {
+void User::changePass() {//changing password function
 	string chapass, pass;
 	cout << "If you want to change your password Press  C else press any other key " << endl;
 	cin >> chapass;

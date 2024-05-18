@@ -1,3 +1,4 @@
+//menue.cpp
 #include "Menue.h"
 #include"User.h"
 #include"University.h"
@@ -119,4 +120,16 @@ void Menue::displayMenu() {
 }
 void Menue::exitSystem() {
 	cout << "Thank you for using the system" << endl;
+}
+void readDataFromFile() {
+
+}
+void writeDataToFile() {
+
+}
+void paraseData() {
+
+}
+void formatData() {
+
 }

@@ -129,7 +129,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Academic_staff.cpp" />
-    <ClCompile Include="Final project com225 sem 4.cpp" />
+    <ClCompile Include="Cource.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="Menue.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="University.cpp" />
@@ -137,6 +138,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Academic_staff.h" />
+    <ClInclude Include="Cource.h" />
     <ClInclude Include="Menue.h" />
     <ClInclude Include="Student.h" />
     <ClInclude Include="University.h" />

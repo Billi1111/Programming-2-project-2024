@@ -1,3 +1,4 @@
+//student.h
 #pragma once
 #ifndef Student_h
 #define Student_h
@@ -17,7 +18,7 @@ public:
 	string studentName;
 	string cources_enrolled;
 public:
-	//User(const ::string username) : username(studentName)
+	
 	double Grades;
 	int getid();
 	void setId(int);

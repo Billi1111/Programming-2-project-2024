@@ -1,3 +1,4 @@
+//University.cpp
 #include "University.h"
 #include <string>
 using namespace std;
@@ -7,7 +8,7 @@ using namespace std;
 string University::addUniCollage() {
 	return list_collages;
 }
-void University::setUniDeparments() {
+void University::setUniDeparments() {//this function will display the departments in the university
     cout << "There are 3 departments in " << addUniCollage() << endl;
     cout << "1. Computer Engineering" << endl;
     cout << "2. Mechanical Engineering" << endl;
@@ -29,7 +30,7 @@ void University::setUniDeparments() {
             continue;
         }
 
-        switch (choice) {
+		switch (choice) {//switch case to select the department
         case 1:
             cout << "Computer Engineering" << endl;
             cout << "Thank you for choosing Computer Engineering." << endl;

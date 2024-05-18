@@ -1,3 +1,4 @@
+//academic_staff.h
 #ifndef Academic_staff_h
 #define Academic_staff_h
 #include <fstream>
@@ -15,7 +16,7 @@ class Academic_staff :public User, public University{
 	string staffName;//inherit name------------------
 	string staff_depatment;
 	string courses_Tought;
-	int office_hours;
+	string office_hours;
 	string students_list[5] = {"Mohamed","Ayman","Bilal","Yasser","Marwan"};
 public:
 	void setStaffId(int);
@@ -23,13 +24,7 @@ public:
 	void teachcource();
 	void viewStudentsList();
 	void setOfficeHours();
-	int getOfficehours();
+	string getOfficehours();
 	void GradeAssignment();
-
-
-
-#endif
-
-
 }; 
-
+#endif

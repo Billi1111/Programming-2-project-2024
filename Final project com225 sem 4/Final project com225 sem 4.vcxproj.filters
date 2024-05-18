@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Final project com225 sem 4.cpp">
+    <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="University.cpp">
@@ -33,6 +33,9 @@
     <ClCompile Include="Menue.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Cource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="University.h">
@@ -48,6 +51,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Menue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

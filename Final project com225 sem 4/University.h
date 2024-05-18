@@ -16,7 +16,7 @@ public:
 public:
 	string addUniName();
 	void setUniName(string);
-	//string addunideparments();
+	
 	void setUniDeparments();
 	string addUniCollage();
 	void setUniCollage(string);

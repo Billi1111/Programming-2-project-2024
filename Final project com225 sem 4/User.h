@@ -1,3 +1,4 @@
+//user.h
 #pragma once
 #ifndef User_h
 #define User_h
@@ -8,10 +9,7 @@
 using namespace std;
 class User
 {
-	//string username;
-	//string email;
-	//string passwoprd;
-	//string role;
+	
 public:
 	string email;
 	string password;
